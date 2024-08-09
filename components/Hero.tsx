@@ -6,8 +6,8 @@ import { HERO_LINKS } from "@/lib/consts";
 const Hero: React.FC = () => {
   return (
     <div className="w-full h-screen flex items-center justify-center text-[#161616] relative overflow-hidden">
-      <div className="relative z-10 flex flex-col items-center text-center">
-        <p className="text-6xl mb-4">Hey, I'm <span className="underline">Noah</span></p>
+      <div className="relative flex flex-col items-center text-center">
+        <p className="text-6xl mb-4">Hey, I&apos;m <span className="underline">Noah</span></p>
         <p className="text-9xl font-bold mb-8">Software Engineer</p>
         <p className="text-2xl max-w-2xl mx-auto opacity-80 mb-8">Crafting elegant solutions to complex problems, one line of code at a time.</p>
         
