@@ -1,8 +1,14 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Hanken_Grotesk } from "next/font/google";
 import "./globals.css";
+import { GeistSans } from 'geist/font/sans';
+import Navbar from "@/components/Navbar";
 
-const inter = Inter({ subsets: ["latin"] });
+const hankenGrotesk = Hanken_Grotesk({
+  subsets: ['latin'], // Specify subsets if available
+  weight: ['400', '700', '800'], // Specify desired font weights
+  variable: '--font-hanken-grotesk', // CSS variable for the font
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -15,8 +21,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="en" suppressHydrationWarning>
+      <body className={`bg-[#f0f0f0] antialiased select-none ${hankenGrotesk.className}`}>
+        <Navbar/>
+        {children}
+      </body>
     </html>
   );
 }
