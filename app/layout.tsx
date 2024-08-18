@@ -1,13 +1,12 @@
 import type { Metadata } from "next";
-import { Inter, Hanken_Grotesk } from "next/font/google";
+import { Hanken_Grotesk } from "next/font/google";
 import "./globals.css";
-import { GeistSans } from 'geist/font/sans';
 import Navbar from "@/components/Navbar";
 
 const hankenGrotesk = Hanken_Grotesk({
-  subsets: ['latin'], // Specify subsets if available
-  weight: ['400', '700', '800'], // Specify desired font weights
-  variable: '--font-hanken-grotesk', // CSS variable for the font
+  subsets: ['latin'],
+  weight: ['400', '700', '800'],
+  variable: '--font-hanken-grotesk',
 });
 
 export const metadata: Metadata = {
@@ -22,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`bg-[#f0f0f0] antialiased select-none ${hankenGrotesk.className}`}>
+      <body className={`bg-[#121315] antialiased select-none ${hankenGrotesk.className}`}>
         <Navbar/>
         {children}
       </body>

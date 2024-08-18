@@ -16,7 +16,7 @@ export const Item = ({
   return (
     <div className={
         cn(
-          "hover:cursor-pointer hover:text-[#161616] transition-all duration-300 font-semibold", 
+          "hover:cursor-pointer hover:text-[#f0f0f0] transition-all duration-300 font-semibold", 
           className, 
           active && ''
         )

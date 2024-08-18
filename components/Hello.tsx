@@ -43,7 +43,7 @@ const AnimatedGreetings: React.FC = () => {
     <AnimatePresence>
       {!isComplete && (
         <motion.div
-          className="bg-[#000] text-[#b9b8b8] fixed inset-0 z-20"
+          className="bg-[#f0f0f0] text-[#000] fixed inset-0 z-20"
           initial={{ y: 0, borderBottomLeftRadius: 0, borderBottomRightRadius: 0 }}
           exit={{ 
             y: '-100%',

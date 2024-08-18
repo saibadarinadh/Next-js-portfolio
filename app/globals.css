@@ -68,18 +68,32 @@
   }
 }
 
-@layer utilities {
-  .glow-effect {
-    text-shadow: 
-      0 0 5px #1ED760,
-      0 0 10px #1ED760,
-      0 0 15px #1ED760,
-      0 0 20px #1ED760;
-  }
+.no-visible-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  -webkit-overflow-scrolling: touch;
+}
+ 
+.no-visible-scrollbar::-webkit-scrollbar {
+  display: none;
 }
 
-.glow-effect {
-  text-shadow: 
-    0 0 5px #1ED760,
-    0 0 10px #1ED760;
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  /* background: #161616; */
+  background-color: transparent;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #1d1c1c;
+  border-radius: 30px;
+  /* border-radius: 10px; */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(44, 44, 44);
 }
