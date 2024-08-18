@@ -3,6 +3,7 @@
 import AnimatedGreetings from "@/components/Hello";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
+import PreviousWork from "@/components/PreviousWork";
 import { ReactLenis } from "@studio-freight/react-lenis";
 
 const lenisOptions = {
@@ -18,6 +19,7 @@ export default function Home() {
       <AnimatedGreetings/>
       <Hero />
       <About />
+      <PreviousWork />
     </ReactLenis>
   );
 }
