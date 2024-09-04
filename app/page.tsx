@@ -1,10 +1,10 @@
 'use client';
 
-import AnimatedGreetings from "@/components/Hello";
-import Hero from "@/components/Hero";
-import About from "@/components/About";
-import PreviousWork from "@/components/PreviousWork";
-import { ReactLenis } from "@studio-freight/react-lenis";
+import AnimatedGreetings from '@/components/Hello';
+import Hero from '@/components/Hero';
+import About from '@/components/About';
+import PreviousWork from '@/components/PreviousWork';
+import { ReactLenis } from '@studio-freight/react-lenis';
 
 const lenisOptions = {
   lerp: 0.05,
@@ -16,7 +16,7 @@ const lenisOptions = {
 export default function Home() {
   return (
     <ReactLenis root options={lenisOptions}>
-      <AnimatedGreetings/>
+      <AnimatedGreetings />
       <Hero />
       <About />
       <PreviousWork />

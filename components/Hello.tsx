@@ -43,16 +43,16 @@ const AnimatedGreetings: React.FC = () => {
     <AnimatePresence>
       {!isComplete && (
         <motion.div
-          className="bg-[#f0f0f0] text-[#000] fixed inset-0 z-20"
+          className="fixed inset-0 z-20 bg-[#f0f0f0] text-[#000]"
           initial={{ y: 0, borderBottomLeftRadius: 0, borderBottomRightRadius: 0 }}
-          exit={{ 
+          exit={{
             y: '-100%',
-            borderBottomLeftRadius: '100%', 
-            borderBottomRightRadius: '100%'
+            borderBottomLeftRadius: '100%',
+            borderBottomRightRadius: '100%',
           }}
           transition={{ duration: 1, ease: 'easeInOut' }}
         >
-          <div className="flex justify-center items-center h-screen">
+          <div className="flex h-screen items-center justify-center">
             <motion.div
               key={currentIndex}
               initial={{ opacity: 0 }}

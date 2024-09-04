@@ -1,14 +1,10 @@
-'use client';
-
-import React, { useRef } from 'react';
-import { motion, useScroll, useTransform } from 'framer-motion';
-import Image from 'next/image';
+import React from 'react';
+import { motion } from 'framer-motion';
 
 interface WorkItem {
   title: string;
   tags: string[];
   image: string;
-  backgroundColor: string;
 }
 
 const workItems: WorkItem[] = [
@@ -16,98 +12,60 @@ const workItems: WorkItem[] = [
     title: "Clippie AI",
     tags: ["My Second SaaS - Age 21"],
     image: "/previous-work/clippie.png",
-    backgroundColor: "rgb(177 61 255)"
   },
   {
     title: "American Express",
     tags: ["Internship"],
     image: "/previous-work/amex.png",
-    backgroundColor: "rgb(50 108 233)"
   },
   {
     title: "Crayo AI",
     tags: ["My first time working at a start-up!"],
     image: "/previous-work/crayo.png",
-    backgroundColor: "rgb(82 183 250)"
   },
   {
     title: "Liquid Tools",
     tags: ["My first ever SaaS!"],
     image: "/previous-work/liquid.png",
-    backgroundColor: "rgb(62 49 236)"
   },
 ];
 
 const PreviousWork: React.FC = () => {
-  const containerRef = useRef<HTMLDivElement>(null);
-  const { scrollYProgress } = useScroll({
-    target: containerRef,
-    offset: ['start start', 'end start']
-  });
-
   return (
-    <div className="hidden md:block relative bg-black text-white overflow-hidden">
-      <h2 className="text-4xl md:text-5xl lg:text-7xl font-bold text-center py-6 md:py-10">Previous Work</h2>
-      <div ref={containerRef} className="relative min-h-[400dvh] mx-4 sm:mx-8 md:mx-16 lg:mx-36 rounded-xl md:rounded-3xl">
-        {workItems.map((item, index) => {
-          const marginTop = index > 0 && useTransform(
-            scrollYProgress,
-            [Math.max(0, (index - 1) * 0.25), index * 0.25, (index + 1) * 0.25],
-            ['-1%', '-3%', '-6%']
-          );
-
-          return (
-            <motion.div
-              key={index}
-              className={`sticky top-0 h-fit flex items-center justify-center overflow-hidden rounded-xl md:rounded-3xl z-[${index+2}]`}
-              style={{
-                backgroundColor: item.backgroundColor,
-                marginTop: marginTop ? marginTop : '0%',
-              }}
-            >
-              <motion.div
-                className="w-full max-w-7xl mx-auto p-4 sm:p-8 md:p-12"
-                style={{
-                  opacity: useTransform(
-                    scrollYProgress,
-                    [index * 0.25, (index + 1) * 0.25],
-                    [1, 0.5]
-                  ),
-                  scale: useTransform(
-                    scrollYProgress,
-                    [index * 0.25, (index + 1) * 0.25],
-                    [1, 1.2]
-                  ),
-                }}
-              >
-                <div className="flex flex-col space-y-4 md:space-y-8 items-center">
-                  <div className='text-center flex flex-col items-center justify-center'>
-                    <div className="flex flex-wrap justify-center gap-2 mb-2 md:mb-4">
-                      {item.tags.map((tag, tagIndex) => (
-                        <span
-                          key={tagIndex}
-                          className="px-2 py-1 bg-transparent text-gray-200 rounded-full text-xs sm:text-sm border border-dashed"
-                        >
-                          {tag}
-                        </span>
-                      ))}
-                    </div>
-                    <h3 className="text-3xl sm:text-5xl md:text-7xl lg:text-[120px] font-bold uppercase">{item.title}</h3>
-                  </div>
-                  <div className="w-full aspect-video relative rounded-lg md:rounded-xl overflow-hidden">
-                    <Image
-                      src={item.image}
-                      alt={item.title}
-                      layout="fill"
-                      objectFit="cover"
-                      className='h-full w-full object-cover'
-                    />
-                  </div>
+    <div className="container mx-auto px-4 py-8">
+      <h2 className="text-3xl font-bold mb-8 text-center">Previous Work</h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {workItems.map((item, index) => (
+          <motion.div
+            key={item.title}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: index * 0.1 }}
+          >
+            <div className="h-full flex flex-col overflow-hidden transition-transform duration-300 hover:scale-105">
+              <div className="relative aspect-video">
+                <img
+                  src={item.image}
+                  alt={item.title}
+                  className="object-cover w-full h-full"
+                />
+              </div>
+              <div className="flex-grow p-4">
+                <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
+                <div className="flex flex-wrap gap-2">
+                  {item.tags.map((tag) => (
+                    <span
+                      key={tag}
+                      className="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded"
+                    >
+                      {tag}
+                    </span>
+                  ))}
                 </div>
-              </motion.div>
-            </motion.div>
-          );
-        })}
+              </div>
+            </div>
+          </motion.div>
+        ))}
       </div>
     </div>
   );
