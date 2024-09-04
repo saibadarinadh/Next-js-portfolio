@@ -1,74 +1,118 @@
+import Image from 'next/image';
 import React from 'react';
-import { motion } from 'framer-motion';
+import { Timeline } from '@/components/ui/timeline';
+import Link from 'next/link';
 
-interface WorkItem {
-  title: string;
-  tags: string[];
-  image: string;
-}
-
-const workItems: WorkItem[] = [
-  {
-    title: "Clippie AI",
-    tags: ["My Second SaaS - Age 21"],
-    image: "/previous-work/clippie.png",
-  },
-  {
-    title: "American Express",
-    tags: ["Internship"],
-    image: "/previous-work/amex.png",
-  },
-  {
-    title: "Crayo AI",
-    tags: ["My first time working at a start-up!"],
-    image: "/previous-work/crayo.png",
-  },
-  {
-    title: "Liquid Tools",
-    tags: ["My first ever SaaS!"],
-    image: "/previous-work/liquid.png",
-  },
-];
-
-const PreviousWork: React.FC = () => {
+export default function PreviousWork() {
+  const data = [
+    {
+      title: 'Clippie AI',
+      content: (
+        <div>
+          <p className="mb-8 text-xs font-normal text-neutral-200 md:text-sm">
+            2024 - Present. Check it out{' '}
+            <Link href={'https://clippie.ai'} className="text-gray-300 no-underline">
+              here
+            </Link>
+          </p>
+          <div className="grid grid-cols-2 gap-4">
+            <Image
+              src="/previous-work/clippie.png"
+              alt="startup template"
+              width={500}
+              height={500}
+              className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+            />
+            <Image
+              src="/previous-work/clippie-2.png"
+              alt="startup template"
+              width={500}
+              height={500}
+              className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+            />
+            <Image
+              src="/previous-work/clippie-3.png"
+              alt="startup template"
+              width={500}
+              height={500}
+              className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+            />
+            <Image
+              src="/previous-work/clippie-4.png"
+              alt="startup template"
+              width={500}
+              height={500}
+              className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+            />
+          </div>
+        </div>
+      ),
+    },
+    {
+      title: 'American Express',
+      content: (
+        <div>
+          <p className="mb-4 flex flex-col text-xs font-normal text-neutral-200 md:text-sm">
+            <span>Intern as a SWE, worked on the backend team for Global commercial services</span>
+            <span>on B2B payments between companies and onboarding the suppliers</span>
+          </p>
+          <div className="grid grid-cols-1 gap-4">
+            <Image
+              src="/previous-work/amex2.webp"
+              alt="hero template"
+              width={500}
+              height={500}
+              className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-full"
+            />
+          </div>
+        </div>
+      ),
+    },
+    {
+      title: 'Crayo AI',
+      content: (
+        <div>
+          <p className="mb-8 text-xs font-normal text-neutral-200 md:text-sm">
+            Worked with the only other engineer here after I started clippie for a while before going to American
+            Express
+          </p>
+          <div className="grid grid-cols-2 gap-4">
+            <Image
+              src="/previous-work/crayo.png"
+              alt="hero template"
+              width={500}
+              height={500}
+              className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+            />
+            <Image
+              src="/previous-work/crayo-2.png"
+              alt="feature template"
+              width={500}
+              height={500}
+              className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+            />
+            <Image
+              src="/previous-work/crayo-3.png"
+              alt="bento template"
+              width={500}
+              height={500}
+              className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+            />
+            <Image
+              src="/previous-work/crayo-4.png"
+              alt="cards template"
+              width={500}
+              height={500}
+              className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+            />
+          </div>
+        </div>
+      ),
+    },
+  ];
   return (
-    <div className="container mx-auto px-4 py-8">
-      <h2 className="text-3xl font-bold mb-8 text-center">Previous Work</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {workItems.map((item, index) => (
-          <motion.div
-            key={item.title}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: index * 0.1 }}
-          >
-            <div className="h-full flex flex-col overflow-hidden transition-transform duration-300 hover:scale-105">
-              <div className="relative aspect-video">
-                <img
-                  src={item.image}
-                  alt={item.title}
-                  className="object-cover w-full h-full"
-                />
-              </div>
-              <div className="flex-grow p-4">
-                <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
-                <div className="flex flex-wrap gap-2">
-                  {item.tags.map((tag) => (
-                    <span
-                      key={tag}
-                      className="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded"
-                    >
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </motion.div>
-        ))}
-      </div>
+    <div className="w-full bg-black">
+      <Timeline data={data} />
     </div>
   );
-};
-
-export default PreviousWork;
+}
