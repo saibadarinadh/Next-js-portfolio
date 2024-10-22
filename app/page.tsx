@@ -4,6 +4,7 @@ import AnimatedGreetings from '@/components/Hello';
 import Hero from '@/components/Hero';
 import About from '@/components/About';
 import PreviousWork from '@/components/PreviousWork';
+import Goodbye from '@/components/Goodbye';
 import { ReactLenis } from '@studio-freight/react-lenis';
 
 const lenisOptions = {
@@ -20,6 +21,7 @@ export default function Home() {
       <Hero />
       <About />
       <PreviousWork />
+      <Goodbye />
     </ReactLenis>
   );
 }
