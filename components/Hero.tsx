@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { FaCaretDown } from 'react-icons/fa';
 import { HERO_LINKS } from '@/lib/consts';
+import { GrFormNextLink } from 'react-icons/gr';
 
 const Hero: React.FC = () => {
   const [scale, setScale] = useState(1);
@@ -12,8 +13,8 @@ const Hero: React.FC = () => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
       const maxScroll = window.innerHeight;
-      const newScale = 1 + (scrollPosition / maxScroll) * 0.2; // Adjust 0.2 to control the maximum scale
-      setScale(newScale > 1.2 ? 1.2 : newScale); // Cap the maximum scale at 1.2
+      const newScale = 1 + (scrollPosition / maxScroll) * 0.2;
+      setScale(newScale > 1.2 ? 1.2 : newScale);
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -43,6 +44,12 @@ const Hero: React.FC = () => {
               {link.icon}
             </Link>
           ))}
+        </div>
+
+        <div className="mt-8">
+          <Link href="https://github.com/NoahGdev/Next-Portfolio" className="text-2xl font-bold hover:underline">
+            Source Code <GrFormNextLink className="inline" />
+          </Link>
         </div>
       </div>
 
