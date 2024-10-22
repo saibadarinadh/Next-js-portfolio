@@ -73,7 +73,7 @@ export default function PreviousWork() {
       content: (
         <div>
           <p className="mb-8 text-xs font-normal text-neutral-200 md:text-sm">
-            Worked with the only other engineer here after I started clippie for a while before going to American
+            Worked with the only other engineer here after I started clippie for a while and before going to American
             Express
           </p>
           <div className="grid grid-cols-2 gap-4">
@@ -111,7 +111,7 @@ export default function PreviousWork() {
     },
   ];
   return (
-    <div className="w-full bg-black">
+    <div className="w-full bg-black" id="prev-work">
       <Timeline data={data} />
     </div>
   );

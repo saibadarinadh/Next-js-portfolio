@@ -30,9 +30,7 @@ const Hero: React.FC = () => {
           Hey, I&apos;m <span className="underline">Noah</span>
         </p>
         <p className="mb-8 text-9xl font-bold">Software Engineer</p>
-        <p className="mx-auto mb-8 max-w-2xl text-2xl opacity-80">
-          Crafting elegant solutions to complex problems, one line of code at a time.
-        </p>
+        <p className="mx-auto mb-8 max-w-2xl text-2xl opacity-80">I build stuff and I love doing so :{')'}</p>
 
         <div className="flex space-x-4">
           {HERO_LINKS.map((link, index) => (
