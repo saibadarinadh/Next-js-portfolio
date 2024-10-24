@@ -27,11 +27,13 @@ const Hero: React.FC = () => {
         className="relative flex flex-col items-center text-center transition-transform duration-300 ease-out"
         style={{ transform: `scale(${scale})` }}
       >
-        <p className="mb-4 text-6xl">
+        <p className="mb-4 text-4xl sm:text-5xl md:text-6xl">
           Hey, I&apos;m <span className="underline">Noah</span>
         </p>
-        <p className="mb-8 text-9xl font-bold">Software Engineer</p>
-        <p className="mx-auto mb-8 max-w-2xl text-2xl opacity-80">I build stuff and I love doing so :{')'}</p>
+        <p className="mb-8 text-5xl font-bold sm:text-7xl md:text-9xl">Software Engineer</p>
+        <p className="mx-auto mb-8 max-w-2xl text-xl opacity-80 sm:text-2xl">
+          I build stuff and I love doing so :{')'}
+        </p>
 
         <div className="flex space-x-4">
           {HERO_LINKS.map((link, index) => (
