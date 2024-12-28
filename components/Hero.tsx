@@ -40,7 +40,7 @@ const Hero: React.FC = () => {
             <Link
               key={index}
               href={link.src}
-              target="_blank"
+              target={link.src === '/resume' ? undefined : '_blank'}
               className="rounded-xl border border-[#d1d1d1] bg-[#EEECEC] p-3 text-[#494949] transition-all duration-300 hover:scale-110 hover:bg-opacity-80"
             >
               {link.icon}

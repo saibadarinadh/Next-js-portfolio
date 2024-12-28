@@ -112,10 +112,10 @@ export default function Resume() {
               </div>
 
               <div className="mb-6">
-                <h3 className="text-lg font-semibold">Software Engineer, Grays AI Inc.</h3>
+                <h3 className="text-lg font-semibold">Software Engineer, Crayo AI Inc.</h3>
                 <p className="mb-2 text-sm text-gray-400">Feb 2024 — Jun 2024</p>
                 <ul className="list-inside list-disc space-y-1">
-                  <li>Non-funded startup with over 500k users. Just me and another dev.</li>
+                  <li>Non-funded startup with over 2 Million users. Just me and another dev.</li>
                   <li>Contributed to redesign of whole website (Next.js, Tailwind, TS)</li>
                   <li>Worked on parts of server side code (Python, FastAPI)</li>
                   <li>Wrote backend logic for features from scratch then implemented frontend</li>
