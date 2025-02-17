@@ -18,7 +18,7 @@ const About: React.FC = () => {
           <div className="space-y-8 rounded-2xl bg-black/40 p-8 backdrop-blur-lg">
             {/* Title Section */}
             <div className="space-y-4">
-              <h2 className="text-lg font-semibold text-blue-400">Hello, I'm Badarinadh</h2>
+              <h2 className="text-lg font-semibold text-blue-400">Hello, I&apos;m Badarinadh</h2>
               <h1 className="bg-gradient-to-r from-white to-blue-400 bg-clip-text text-4xl font-extrabold text-transparent sm:text-5xl md:text-6xl lg:text-7xl">
                 FullStack Developer & AI Researcher
               </h1>
@@ -27,11 +27,11 @@ const About: React.FC = () => {
             {/* Description Section */}
             <div className="space-y-6 text-lg text-gray-300">
               <p className="leading-relaxed">
-                Passionate about crafting innovative solutions at the intersection of AI and Full Stack Development. 
+                Passionate about crafting innovative solutions at the intersection of AI and Full Stack Development.
                 With expertise in building efficient, scalable applications and implementing cutting-edge AI solutions.
               </p>
               <p className="leading-relaxed">
-                My journey encompasses deep learning, machine learning, and modern web technologies. 
+                My journey encompasses deep learning, machine learning, and modern web technologies.
                 I focus on creating impactful solutions that bridge the gap between complex AI systems and user-friendly applications.
               </p>
             </div>
@@ -52,7 +52,7 @@ const About: React.FC = () => {
               </div> */}
             </div>
 
-            
+
           </div>
 
           {/* Image Section - Uncomment and update image path when ready */}
@@ -70,7 +70,7 @@ const About: React.FC = () => {
           </div> */}
         </div>
 
-        
+
       </div>
     </div>
   );

@@ -7,7 +7,12 @@ const projects = [
   {
     title: "RoadVision - Traffic Safety Analyzer",
     description: "An AI-powered traffic safety system that detects and analyzes road hazards, traffic violations, and accidents in real-time using computer vision. Features include violation detection, accident analysis, and automated reporting.",
-    technologies: [<SiPython />, <SiPytorch />, <SiReact />, <SiFastapi />],
+    technologies: [
+      <SiPython key="python" />,
+      <SiPytorch key="pytorch" />,
+      <SiReact key="react" />,
+      <SiFastapi key="fastapi" />
+    ],
     techNames: ["Python", "PyTorch", "React", "FastAPI"],
     github: "https://github.com/saibadarinadh/RoadVision-Intelligent-Traffic-Safety-Analyzer",
     live: "#",
@@ -17,7 +22,11 @@ const projects = [
   {
     title: "GynoAIHub",
     description: "An AI-powered healthcare platform specifically designed for gynecological diagnosis and consultation. Integrates machine learning for preliminary diagnosis and provides telemedicine capabilities.",
-    technologies: [<SiPython />, <SiOpenai />, <SiReact />],
+    technologies: [
+      <SiPython key="python" />,
+      <SiOpenai key="openai" />,
+      <SiReact key="react" />
+    ],
     techNames: ["Python", "OpenAI", "React", "TailwindCSS"],
     github: "https://github.com/saibadarinadh/GynoAIHub",
     live: "",
@@ -27,7 +36,12 @@ const projects = [
   {
     title: "JobHut",
     description: "A modern job search and recruitment platform with AI-powered job matching, resume parsing, and automated application tracking system. Features real-time notifications and analytics dashboard.",
-    technologies: [<SiNextdotjs />, <SiReact />, <SiPrisma />, <SiMongodb />],
+    technologies: [
+      <SiNextdotjs key="nextjs" />,
+      <SiReact key="react" />,
+      <SiPrisma key="prisma" />,
+      <SiMongodb key="mongodb" />
+    ],
     techNames: ["Next.js", "React", "Prisma", "MongoDB"],
     github: "https://github.com/saibadarinadh/jobHut",
     live: "https://www.jobhut.in/",
@@ -37,7 +51,12 @@ const projects = [
   {
     title: "CrimeSense",
     description: "An advanced crime analysis and prediction system using machine learning. Includes features for pattern recognition, hotspot mapping, and predictive analytics for law enforcement.",
-    technologies: [<SiPython />, <SiTensorflow />, <SiReact />, <SiFastapi />],
+    technologies: [
+      <SiPython key="python" />,
+      <SiTensorflow key="tensorflow" />,
+      <SiReact key="react" />,
+      <SiFastapi key="fastapi" />
+    ],
     techNames: ["Python", "TensorFlow", "React", "FastAPI"],
     github: "https://github.com/saibadarinadh/CrimeSense",
     live: "#",
@@ -47,7 +66,12 @@ const projects = [
   {
     title: "Real Estate Platform",
     description: "A comprehensive real estate platform featuring property listings, virtual tours, price predictions, and mortgage calculators. Includes admin dashboard for property management.",
-    technologies: [<SiNextdotjs />, <SiReact />, <SiJavascript />, <SiTailwindcss />],
+    technologies: [
+      <SiNextdotjs key="nextjs" />,
+      <SiReact key="react" />,
+      <SiJavascript key="javascript" />,
+      <SiTailwindcss key="tailwind" />
+    ],
     techNames: ["Next.js", "React", "JavaScript", "TailwindCSS"],
     github: "https://github.com/saibadarinadh/realestate-website",
     live: "#",
