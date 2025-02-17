@@ -32,7 +32,7 @@ const projects = [
     github: "https://github.com/saibadarinadh/jobHut",
     live: "https://www.jobhut.in/",
     category: "Full Stack",
-    image: "/jobhut.png"
+    image: "/api/placeholder/600/400"
   },
   {
     title: "CrimeSense",
@@ -72,7 +72,7 @@ const Modal = ({ children, isOpen, onClose }: { children: React.ReactNode, isOpe
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4" onClick={onClose}>
       <div className="fixed inset-0 bg-black/70" aria-hidden="true" />
-      <div 
+      <div
         className="relative w-full max-w-2xl rounded-xl bg-gray-900 p-6 shadow-xl"
         onClick={e => e.stopPropagation()}
       >
@@ -95,7 +95,7 @@ interface Project {
 
 const ProjectModal = ({ project, isOpen, onClose }: { project: Project | null, isOpen: boolean, onClose: () => void }) => {
   if (!project) return null;
-  
+
   return (
     <Modal isOpen={isOpen} onClose={onClose}>
       <button
@@ -104,7 +104,7 @@ const ProjectModal = ({ project, isOpen, onClose }: { project: Project | null, i
       >
         <FaTimes className="h-6 w-6" />
       </button>
-      
+
       <div className="relative mb-6 h-64 w-full overflow-hidden rounded-lg">
         <Image
           src={project.image}
@@ -113,15 +113,15 @@ const ProjectModal = ({ project, isOpen, onClose }: { project: Project | null, i
           objectFit="cover"
         />
       </div>
-      
+
       <span className="rounded-full bg-blue-500/10 px-3 py-1 text-sm font-medium text-blue-400">
         {project.category}
       </span>
-      
+
       <h3 className="mt-4 text-2xl font-bold text-white">{project.title}</h3>
-      
+
       <p className="mt-4 text-gray-400">{project.description}</p>
-      
+
       <div className="mt-6">
         <div className="flex flex-wrap gap-3">
           {project.technologies.map((tech, idx) => (
@@ -136,7 +136,7 @@ const ProjectModal = ({ project, isOpen, onClose }: { project: Project | null, i
           ))}
         </div>
       </div>
-      
+
       <div className="mt-6 flex gap-4">
         <a
           href={project.github}
