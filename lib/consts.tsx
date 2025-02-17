@@ -1,44 +1,23 @@
-import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
-import { IoDocumentTextOutline } from 'react-icons/io5';
+import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 
 export const HERO_LINKS = [
   {
     icon: <FaGithub size={24} />,
-    src: 'https://github.com/NoahGdev',
+    src: 'https://github.com/saibadarinadh',
   },
   {
     icon: <FaLinkedin size={24} />,
-    src: 'https://linkedin.com/in/noah-gomes',
+    src: 'https://www.linkedin.com/in/vecha-sai-badarinadh-0b4ab7225/',
   },
+  // {
+  //   icon: <FaTwitter size={24} />,
+  //   src: 'https://x.com/NoxhDevs',
+  // },
   {
-    icon: <FaTwitter size={24} />,
-    src: 'https://x.com/NoxhDevs',
+    icon: <FaEnvelope size={24} />,
+    src: 'mailto:vechasaibadarinadh@gmail.com',
   },
-  {
-    icon: <IoDocumentTextOutline size={24} />,
-    src: '/resume',
-  },
+  
 ];
 
-export const PROJECTS = [
-  {
-    id: 1,
-    imageUrl: '/previous-work/crayo.png',
-    dribbleLink: 'https://dribbble.com/',
-  },
-  {
-    id: 1,
-    imageUrl: '/previous-work/clippie.png',
-    dribbleLink: 'https://dribbble.com/',
-  },
-  {
-    id: 1,
-    imageUrl: '/previous-work/liquid.png',
-    dribbleLink: 'https://dribbble.com/',
-  },
-  {
-    id: 1,
-    imageUrl: '/previous-work/amex.png',
-    dribbleLink: 'https://dribbble.com/',
-  },
-];
+

@@ -5,6 +5,8 @@ import Hero from '@/components/Hero';
 import About from '@/components/About';
 import PreviousWork from '@/components/PreviousWork';
 import Goodbye from '@/components/Goodbye';
+import Skills from '@/components/AllSkills';
+import Projects from '@/components/Projects';
 import { ReactLenis } from '@studio-freight/react-lenis';
 
 const lenisOptions = {
@@ -20,6 +22,8 @@ export default function Home() {
       <AnimatedGreetings />
       <Hero />
       <About />
+      <Skills/>
+      <Projects/>
       <PreviousWork />
       <Goodbye />
     </ReactLenis>

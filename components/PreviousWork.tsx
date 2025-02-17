@@ -10,56 +10,52 @@ export default function PreviousWork() {
       content: (
         <div>
           <p className="mb-8 text-xs font-normal text-neutral-200 md:text-sm">
-            2024 - Present. Check it out{' '}
+            🏡 HomzSpot: Redefining Real Estate Discovery 🚀
+            <br></br>Discover a new era in real estate with HomzSpot – not just a listing site, but your all-in-one solution. We prioritize security with robust authentication, ensuring your peace of mind.
+            <br></br>👤 User-Centric Design
+            Seamless registration, secure login, and personalized profiles set the stage for your HomzSpot journey. Your needs and preferences matter.
+            <br></br>🏠 Effortless Listings with CRUD Operations
+            Showcase properties effortlessly with comprehensive details, stunning images, and robust CRUD operations for easy management – create, read, update, and delete listings with a breeze.
+            <br></br>💬 Connect with Ease
+            Our messaging system fosters buyer-seller communication. Bookmark favorite properties for a streamlined experience.
+            <br></br>📱 Responsive & Mobile-Friendly
+            HomzSpot adapts to your lifestyle with a responsive, mobile-friendly design. Your property search is at your fingertips, anytime, anywhere.
             <Link href={'https://clippie.ai'} className="text-gray-300 no-underline">
               here
             </Link>
           </p>
           <div className="grid grid-cols-2 gap-4">
             <Image
-              src="/previous-work/clippie.png"
+              src="/previous-work/home.png"
               alt="startup template"
               width={500}
               height={500}
               className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
             />
             <Image
-              src="/previous-work/clippie-2.png"
+              src="/previous-work/crud.jpeg"
               alt="startup template"
               width={500}
               height={500}
               className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
             />
-            <Image
-              src="/previous-work/clippie-3.png"
-              alt="startup template"
-              width={500}
-              height={500}
-              className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
-            />
-            <Image
-              src="/previous-work/clippie-4.png"
-              alt="startup template"
-              width={500}
-              height={500}
-              className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
-            />
+            
           </div>
         </div>
       ),
     },
     {
-      title: 'American Express',
+      title: 'Head of Strategies and Simulation –10X (StartUp)',
       content: (
         <div>
           <p className="mb-4 flex flex-col text-xs font-normal text-neutral-200 md:text-sm">
-            <span>Intern as a SWE, worked on the backend team for Global commercial services</span>
-            <span>on B2B payments between companies and onboarding the suppliers</span>
+
+            I represented 10X in negotiations with Foxconn, securing a manufacturing partnership for mobile devices, and played a key role in designing the 10X Smart Speaker, contributing to its architecture, product development, and the creation of the 10X Voice Assistant. Additionally, I led a 7-member Agile team to integrate AI-powered features, increasing user engagement by 30%, and worked on AI-driven smartphone software, ensuring inclusivity and innovation. I also managed the company website and actively represented 10X in business deals, driving strategic growth and technological advancements.
           </p>
           <div className="grid grid-cols-1 gap-4">
             <Image
-              src="/previous-work/amex2.webp"
-              alt="hero template"
+              src="/previous-work/10X.jpeg"
+              alt="startup template"
               width={500}
               height={500}
               className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-full"
@@ -68,47 +64,7 @@ export default function PreviousWork() {
         </div>
       ),
     },
-    {
-      title: 'Crayo AI',
-      content: (
-        <div>
-          <p className="mb-8 text-xs font-normal text-neutral-200 md:text-sm">
-            Worked with the only other engineer here after I started clippie for a while and before going to American
-            Express
-          </p>
-          <div className="grid grid-cols-2 gap-4">
-            <Image
-              src="/previous-work/crayo.png"
-              alt="hero template"
-              width={500}
-              height={500}
-              className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
-            />
-            <Image
-              src="/previous-work/crayo-2.png"
-              alt="feature template"
-              width={500}
-              height={500}
-              className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
-            />
-            <Image
-              src="/previous-work/crayo-3.png"
-              alt="bento template"
-              width={500}
-              height={500}
-              className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
-            />
-            <Image
-              src="/previous-work/crayo-4.png"
-              alt="cards template"
-              width={500}
-              height={500}
-              className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
-            />
-          </div>
-        </div>
-      ),
-    },
+
   ];
   return (
     <div className="w-full bg-black" id="prev-work">
