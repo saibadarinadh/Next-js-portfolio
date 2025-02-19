@@ -6,7 +6,7 @@ import Link from 'next/link';
 export default function PreviousWork() {
   const data = [
     {
-      title: 'Clippie AI',
+      title: 'MERN Intern',
       content: (
         <div>
           <p className="mb-8 text-xs font-normal text-neutral-200 md:text-sm">
